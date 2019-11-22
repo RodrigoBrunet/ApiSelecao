@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS pessoa;
+
+CREATE TABLE IF NOT EXISTS pessoa (
+  codigo BIGINT(20) PRIMARY KEY AUTO_INCREMENT,
+  nome VARCHAR(200) NOT NULL,
+  cpf  VARCHAR(100),
+  uf   VARCHAR(10),
+  data_nascimento DATE
+);
+
+
